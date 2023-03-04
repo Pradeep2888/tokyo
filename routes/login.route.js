@@ -7,6 +7,7 @@ require("dotenv").config()
 
 
 loginRouter.get("/",(req,res)=>{
+    req
     res("welcome to login page")
 })
 
