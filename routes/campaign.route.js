@@ -34,6 +34,8 @@ campaignRouter.post("/post",async (req,res)=>{
         no_of_praposals,
         other_link,
         platform,
+        audienceage,
+        gender,
         reference_contact_link,
         reference_influencer_link,
         websitelink}=req.body.data
@@ -57,6 +59,8 @@ campaignRouter.post("/post",async (req,res)=>{
         no_of_praposals,
         other_link,
         platform,
+        audienceage,
+        gender,
         reference_contact_link,
         reference_influencer_link,
         websitelink
