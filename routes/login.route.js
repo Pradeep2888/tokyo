@@ -7,7 +7,6 @@ require("dotenv").config()
 
 
 loginRouter.get("/",(req,res)=>{
-    req
     res("welcome to login page")
 })
 
@@ -28,7 +27,6 @@ loginRouter.post("/user",async (req,res)=>{
         }
         if(result){
             const token=jwt.sign({user_detail},process.env.SECRET_KEY);
-              res.cookie(`tokyo`,token)
             res.send({"mesg":"Login sucessfull","token":token})
         }
         else{

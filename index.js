@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const { googleOathRouter } = require("./routes/google-outh.route");
 const cors = require("cors");
 const { userProfile } = require("./routes/userprofile.route");
+const { campaignRouter } = require("./routes/campaign.route");
 
 
 const app = express();
@@ -25,6 +26,9 @@ app.use("/register",registerRouter)
 app.use("/login",loginRouter)
 app.use("/profile",userProfile)
 app.use("/auth",googleOathRouter)
+app.use("/campaign",campaignRouter)
+
+
 
 
 
